@@ -14,9 +14,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "prepare": "husky install || echo \"The failure in 'husky install' is ignored - this package is non-essential.\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "posttest": "prettier \"**/*.{js,css}\" --check",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -24,6 +26,9 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "lint-staged": {
+    "*.{js,css}": "prettier --write"
   },
   "babel": {},
   "browserslist": {
@@ -37,5 +42,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
+    "prettier": "^2.6.2"
   }
 }
