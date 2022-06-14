@@ -70,5 +70,8 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.1",
     "prettier": "^2.6.2"
+  },
+  "storybook": {
+    "url": "https://vlukashov.github.io/learnstorybook-design-system"
   }
 }
