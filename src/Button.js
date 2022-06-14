@@ -390,6 +390,8 @@ Button.propTypes = {
   containsIcon: PropTypes.bool,
   size: PropTypes.oneOf(Object.values(SIZES)),
   ButtonWrapper: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
+
+  onClick: PropTypes.func,
 };
 
 Button.defaultProps = {

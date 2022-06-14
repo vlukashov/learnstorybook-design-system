@@ -18,8 +18,9 @@ function ButtonWrapper(props) {
 }
 
 export default {
-  title: "Design System/Button",
+  title: "Components/Button",
   component: Button,
+  argTypes: { onClick: { action: "clicked" } },
 };
 
 export const AllButtons = (args) => (
